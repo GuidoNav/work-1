@@ -6,9 +6,6 @@
     font-size: 20px;
 }
 
-body{
-    background-color: #fefefe;
-}
 
 .header{
     background-color: #F0EDCF;
@@ -47,16 +44,47 @@ body{
 .header .items li a:hover{
     color: #61899e;
 }
-.carousel{
-    background-color: white;
+
+.container{
+    
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 400px;
-    width: auto;
-    border: 1px;
-    border-style: ridge;
-    padding: 10px 20%;
-    position: static;
+    flex-wrap:wrap;
+    margin: 10px;
 }
+.container .card{
+    flex-grow: 1;
+    flex-basis: 200;
+    width: 300px;
+    height: 300px;
+    margin: 1px;
+    background: url(/img/img.jpg);
+}
+.seperator{
+    margin-bottom: 30px;
+    width:35px;
+    height:3px;
+    background:#777;
+    border:none;
+  }
+
+
+.container .card{
+    align-items:start;
+}
+
+.footer{
+    background-color: #F0EDCF;
+    display:flex;
+    justify-content:space-between;
+    align-items:start;
+    height: 50px;
+    padding: 5px 10%;
+}
+
+.footer .links{
+    display:inline;
+    padding: 0 10px;
+}
+
+
 
