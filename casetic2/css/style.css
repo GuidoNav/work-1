@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+}
+body{
+    background-color: #0B60B0;
+}
+#logo{
+    height: 50px;
+    width: auto;
+}
+.slide{
+    display: flex;
+}
+.slide img{
+    height: 500px;
+    object-fit: cover;
+}
+.socios{
+    display: flex;
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+    background-color: #0B60B0;
+    align-items: center;
+    justify-content: center;
+    object-fit: cover;
+}
+.socios .cards{
+    box-sizing: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content:center;
+    width: 1200px;
+    height: 400px;
+    padding: 30px 50px 30px 50px;
+    margin: 10px;
+    border: none;
+    border-radius:20px;
+    align-items: center;
+}
+.socios .cards .imagen div{
+    align-items: center;
+}
+.socios .cards img{
+    width: 300px;
+}
+.bn632-hover {
+    width: 160px;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    margin: 20px;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:hover {
+    background-position: 100% 0;
+    moz-transition: all .4s ease-in-out;
+    -o-transition: all .4s ease-in-out;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+  }
+  
+  .bn632-hover:focus {
+    outline: none;
+  }
+  
+  .bn632-hover.bn26 {
+    background-image: linear-gradient(
+      to right,
+      #25aae1,
+      #4481eb,
+      #04befe,
+      #3f86ed
+    );
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+  }
+
+
