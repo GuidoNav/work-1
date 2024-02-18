@@ -20,7 +20,10 @@ h1{
     height: 50px;
     width: auto;
 }
-
+.carousel-caption h2,
+.carousel-caption p {
+    color: #fff !important;
+}
 .slide img{
     height: 500px;
     object-fit: cover;
@@ -122,7 +125,9 @@ h1{
   width: 100%;
   height: auto;
   max-height: 120px;
+  justify-content: space-evenly;
 }
+
 /* BOTONES */
 .bn632-hover {
     width: 160px;
@@ -205,4 +210,30 @@ h1{
     box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
   }
   
+  .bn15 {
+    font-family: lato,sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #0B60B0;
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    position: relative;
+    border: 3px solid #0B60B0;
+    border-radius: 20px;
+  }
 
+  .bn14 {
+    font-family: lato,sans-serif;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    text-decoration: none;
+    color: #0B60B0;
+    display: inline-block;
+    padding: 10px 40px 10px 40px;
+    position: relative;
+    border: 3px solid #0B60B0;
+    border-radius: 0px;
+  }
