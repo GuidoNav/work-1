@@ -7,6 +7,14 @@
 }
 body{
     background-color: #0B60B0;
+    padding-bottom: 200px;
+    min-height: 10vh;
+}
+h2 {
+  font-family: "Anton", sans-serif;
+}
+h1{
+  font-family: "Anton", sans-serif;
 }
 #logo{
     height: 50px;
@@ -28,14 +36,15 @@ body{
     object-fit: cover;
 }
 .socios .cards{
-    box-sizing: 3px;
+    box-sizing: border-box;
     display: flex;
     flex-wrap: wrap;
     background-color: white;
     justify-content:space-evenly;
-    width: 1200px;
-    height: 400px;
-    padding: 30px 50px 30px 50px;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 30px 20px;
     margin: 10px;
     border: none;
     border-radius:20px;
@@ -51,35 +60,50 @@ body{
     width: 300px;
 }
 
+@media (max-width: 768px) {
+  .socios .cards {
+    padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
+  }
+}
+
 .Contacto{
     display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
     height: 500px;
     width: 100%;
     padding: 10px;
     background-color: #0B60B0;
     align-items: center;
     justify-content: center;
-    object-fit: cover;
 }
 .Contacto .cards{
-    box-sizing: 3px;
+    box-sizing: border-box;
     display:flex;
-    flex-direction:column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction:column-reverse;
     background-color: white;
     justify-content:space-around;
-    width: 1200px;
-    height: 400px;
-    padding: 30px 50px 30px 50px;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 30px 20px;
     margin: 10px;
     border: none;
     border-radius:20px;
-    align-items: center;
 }
+
 .Contacto .cards .intro{
+    flex-basis: auto;
+    flex-grow: 1;
     text-align: center;
     text-wrap:balance;
+    word-wrap: break-word;
 }
 .Contacto .cards .imagen{
+    flex-basis: auto;
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,6 +113,16 @@ body{
     width: 300px;
 }
 
+.footer {
+  background-color: white;
+  color: white;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  max-height: 120px;
+}
 /* BOTONES */
 .bn632-hover {
     width: 160px;
