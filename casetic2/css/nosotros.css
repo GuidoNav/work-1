@@ -20,72 +20,23 @@ h1{
     height: 50px;
     width: auto;
 }
-.carousel-caption h2,
-.carousel-caption p {
-    color: #fff !important;
+.nosotros{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0B60B0;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  margin: 20px;
 }
-.slide img{
-    height: 500px;
-    object-fit: cover;
-}
-.socios{
-    display: flex;
-    height: 500px;
-    width: 100%;
-    padding: 10px;
-    background-color: #0B60B0;
-    align-items: center;
-    justify-content: center;
-    object-fit: cover;
-}
-.socios .cards{
-    box-sizing: border-box;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: white;
-    justify-content:space-evenly;
-    width: 100%;
-    max-width: 1200px;
-    height: auto;
-    padding: 30px 20px;
-    margin: 10px;
-    border: none;
-    border-radius:20px;
-    align-items: center;
-}
-.socios .cards .imagen{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.socios .cards img{
-    width: 300px;
-}
-
-@media (max-width: 768px) {
-  .socios .cards {
-    padding: 20px; /* Ajusta el padding para pantallas más pequeñas */
-  }
-}
-
-.Contacto{
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    height: 500px;
-    width: 100%;
-    padding: 10px;
-    background-color: #0B60B0;
-    align-items: center;
-    justify-content: center;
-}
-.Contacto .cards{
-    box-sizing: border-box;
+.descripcion{
+  box-sizing: border-box;
     display:flex;
     flex-wrap: wrap;
     align-content: flex-start;
-    flex-direction:column-reverse;
     background-color: white;
     justify-content:space-around;
     width: 100%;
@@ -97,23 +48,60 @@ h1{
     border-radius:20px;
 }
 
-.Contacto .cards .intro{
-    flex-basis: auto;
-    flex-grow: 1;
-    text-align: center;
-    text-wrap:balance;
-    word-wrap: break-word;
-}
-.Contacto .cards .imagen{
-    flex-basis: auto;
-    flex-grow: 1;
+.mvv {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    height: 300px;
+    width: 100%;
+    padding: 10px;
+    background-color: #0B60B0;
     align-items: center;
+    justify-content: center;
+    object-fit: cover;
 }
-.Contacto .cards img{
-    width: 300px;
+.mvv .nosotros{
+  box-sizing: border-box;
+  display:flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  background-color: white;
+  justify-content:space-around;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  padding: 30px 20px;
+  margin: 0px;
+  border-radius: 20px;
+ 
+}
+.comision{
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0B60B0;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  margin: 50px 0px;
+}
+
+.comision .organi{
+  box-sizing: border-box;
+  display:flex;
+  align-items:flex-start;
+  align-content: flex-start;
+  background-color: white;
+  justify-content:space-around;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  padding: 30px 20px;
+  margin: 10px 0px;
+  border-radius: 20px;
+  flex-direction: column;
+ 
 }
 
 .footer {

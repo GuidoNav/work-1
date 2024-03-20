@@ -1,0 +1,204 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'roboto', sans-serif;
+    font-size: 20px;
+}
+body{
+    background-color: #0B60B0;
+    padding-bottom: 200px;
+    min-height: 10vh;
+}
+h2 {
+  font-family: "Anton", sans-serif;
+}
+h1{
+  font-family: "Anton", sans-serif;
+}
+
+#logo{
+    height: 50px;
+    width: auto;
+}
+
+.container{
+    display: flex;
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius:20px;
+    margin-top: 50px;
+}
+.container .cards{
+    box-sizing: border-box;
+    display:flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    flex-direction: row;
+    background-color: white;
+    justify-content:space-around;
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    padding: 30px 20px;
+    margin: 10px;
+    border: none;
+    border-radius:20px;
+}
+
+.container .cards .contacto{
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+    text-wrap:balance;
+    word-wrap: break-word;
+}
+.container .cards .form{
+    flex-basis: auto;
+    flex-grow: 1;
+    text-align: center;
+    text-wrap:balance;
+    word-wrap: break-word;
+}
+
+.footer {
+    background-color: white;
+    color: white;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    max-height: 120px;
+    justify-content: space-evenly;
+  }
+
+  @media screen and (max-width: 768px) {
+    body {
+        padding-bottom: 100px; /* Comentario: Ajuste en el espacio inferior del cuerpo */
+    }
+
+    .container {
+        margin-top: 30px; /* Comentario: Ajuste en el margen superior del contenedor */
+    }
+
+    .container .cards {
+        padding: 20px; /* Comentario: Ajuste en el relleno de las tarjetas en dispositivos pequeños */
+    }
+}
+
+  
+  /* BOTONES */
+  .bn632-hover {
+      width: 160px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 20px;
+      height: 55px;
+      text-align:center;
+      border: none;
+      background-size: 300% 100%;
+      border-radius: 50px;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+    
+    .bn632-hover:hover {
+      background-position: 100% 0;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+    
+    .bn632-hover:focus {
+      outline: none;
+    }
+    
+    .bn632-hover.bn26 {
+      background-image: linear-gradient(
+        to right,
+        #25aae1,
+        #4481eb,
+        #04befe,
+        #3f86ed
+      );
+      box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+    }
+  
+    .bn632-hover {
+      width: 160px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #fff;
+      cursor: pointer;
+      margin: 20px;
+      height: 55px;
+      text-align: center;
+      border: none;
+      background-size: 300% 100%;
+      border-radius: 50px;
+      -o-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      transition: all 0.4s ease-in-out;
+    }
+    
+    .bn632-hover:hover {
+      background-position: 100% 0;
+      moz-transition: all .4s ease-in-out;
+      -o-transition: all .4s ease-in-out;
+      -webkit-transition: all .4s ease-in-out;
+      transition: all .4s ease-in-out;
+    }
+    
+    .bn632-hover:focus {
+      outline: none;
+    }
+    
+    .bn632-hover.bn24 {
+      background-image: linear-gradient(
+          to right,
+          #6253e1,
+          #852d91,
+          #a3a1ff,
+          #f24645
+        );
+      box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+    }
+    
+    .bn15 {
+      font-family: lato,sans-serif;
+      font-weight: bold;
+      font-size: 1em;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      color: #0B60B0;
+      display: inline-block;
+      padding: 10px 40px 10px 40px;
+      position: relative;
+      border: 3px solid #0B60B0;
+      border-radius: 20px;
+    }
+  
+    .bn14 {
+      font-family: lato,sans-serif;
+      font-weight: bold;
+      font-size: 1em;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      color: #0B60B0;
+      display: inline-block;
+      padding: 10px 40px 10px 40px;
+      position: relative;
+      border: 3px solid #0B60B0;
+      border-radius: 0px;
+    }
