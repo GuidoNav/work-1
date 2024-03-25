@@ -7,20 +7,34 @@
 }
 body{
     background-color: #0B60B0;
-    padding-bottom: 200px;
-    min-height: 10vh;
 }
 h2 {
   font-family: "Anton", sans-serif;
 }
 h1{
   font-family: "Anton", sans-serif;
+  color: #007bc1;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.37);
+  text-align: center;
 }
 
 #logo{
-    height: 50px;
-    width: auto;
+  height: 100px;
+  width: auto;
 }
+.redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 151.05px;
+}
+.redes img{
+  height: 50px;
+  width: auto;
+}
+
 
 .container{
     display: flex;
@@ -33,6 +47,7 @@ h1{
     border: none;
     border-radius:20px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .container .cards{
     box-sizing: border-box;
@@ -65,18 +80,93 @@ h1{
     text-wrap:balance;
     word-wrap: break-word;
 }
+.contacto p{
+  color: #007bc1;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.37);
+  text-align: center;
+}
+.pie {
+  display: flex;
+  flex-direction:row;
+  position: static;
+  background-color: #F2F4F4;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  box-sizing: border-box;
+}
+.pie h6{
+  color: #007bc1;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.37);
+}
+.hora-dire{
+  flex: wrap;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 0;
+  padding: 10px;
+  width: auto;
+  width: 33%;
+  box-sizing: border-box;
+}
+.pie .hora-dire p{
+  font-size: 17px;
+}
+.pie .map{
+  flex: wrap;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 0;
+  padding: 10px;
+  width: 33%;
+  box-sizing: border-box;
+}
+.pie .map iframe{
+  height: 100px;
+  width: 200px;
+  
+}
+.pie .nodos{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+  width: 33%;
+  box-sizing: border-box;
+}
 
-.footer {
-    background-color: white;
-    color: white;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    max-height: 120px;
-    justify-content: space-evenly;
+.nodos p{
+  font-size: 10px;
+}
+
+.pie img{
+  height: 30px;
+  width: auto;
+}
+@media only screen and (max-width: 768px) {
+  .pie {
+    flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
   }
+  .pie .hora-dire,
+  .pie .map,
+  .pie .nodos {
+    width: 100%; /* Cambiar el ancho de las columnas a 100% en dispositivos móviles */
+    margin: 0; /* Eliminar márgenes en dispositivos móviles */
+  }
+  .pie .map iframe {
+    height: 200px; /* Modificar el tamaño del iframe en dispositivos móviles */
+    width: 100%; /* Ajustar el ancho del iframe al 100% en dispositivos móviles */
+  }
+  .pie img {
+    height: auto; /* Permitir que la altura de la imagen se ajuste automáticamente en dispositivos móviles */
+    width: 100%; /* Ajustar el ancho de la imagen al 100% en dispositivos móviles */
+  }
+}
+
 
   @media screen and (max-width: 768px) {
     body {

@@ -7,19 +7,37 @@
 }
 body{
     background-color: #0B60B0;
-    padding-bottom: 200px;
     min-height: 10vh;
 }
 h2 {
-  font-family: "Anton", sans-serif;
+  font-family: "Varela Round", sans-serif;
 }
 h1{
-  font-family: "Anton", sans-serif;
+  font-family: "Varela Round", sans-serif;
+}
+h6{
+  font-family: "Varela Round", sans-serif;
+}
+p{
+  font-family: "Varela Round", sans-serif;
 }
 #logo{
-    height: 50px;
+    height: 100px;
     width: auto;
 }
+.redes{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 151.05px;
+}
+.redes img{
+  height: 50px;
+  width: auto;
+}
+
 .carousel-caption h2,
 .carousel-caption p {
     color: #fff !important;
@@ -77,6 +95,11 @@ h1{
 .socios .cards img{
     width: 300px;
 }
+.texto h2{
+  color: #007bc1;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.37);
+  text-align: center;
+}
 
 @media (max-width: 768px) {
   .socios .cards {
@@ -133,6 +156,11 @@ h1{
     width: 50%;
     object-fit: cover;
 }
+.intro h2{
+  text-align: center;
+  color: #007bc1;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.37);
+}
 
 @media (max-width: 768px) {
   .Contacto .cards {
@@ -140,17 +168,88 @@ h1{
   }
 }
 
-.footer {
-  background-color: white;
-  color: white;
-  text-align: center;
-  position:fixed;
-  bottom: 0;
+.pie {
+  display: flex;
+  flex-direction:row;
+  position: static;
+  background-color: #F2F4F4;
   width: 100%;
   height: auto;
-  max-height: 120px;
-  justify-content: space-evenly;
+  margin: 0;
+  box-sizing: border-box;
 }
+.pie h6{
+  color: #007bc1;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.37);
+}
+.hora-dire{
+  flex: wrap;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 0;
+  padding: 10px;
+  width: auto;
+  width: 33%;
+  box-sizing: border-box;
+}
+.pie .hora-dire p{
+  font-size: 17px;
+}
+.pie .map{
+  flex: wrap;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  margin: 0;
+  padding: 10px;
+  width: 33%;
+  box-sizing: border-box;
+}
+.pie .map iframe{
+  height: 100px;
+  width: 200px;
+  
+}
+.pie .nodos{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: center;
+  margin: 0;
+  padding: 10px;
+  width: 33%;
+  box-sizing: border-box;
+}
+
+.nodos p{
+  font-size: 10px;
+}
+
+.pie img{
+  height: 30px;
+  width: auto;
+}
+@media only screen and (max-width: 768px) {
+  .pie {
+    flex-direction: column; /* Cambiar a una disposición de columna en dispositivos móviles */
+  }
+  .pie .hora-dire,
+  .pie .map,
+  .pie .nodos {
+    width: 100%; /* Cambiar el ancho de las columnas a 100% en dispositivos móviles */
+    margin: 0; /* Eliminar márgenes en dispositivos móviles */
+  }
+  .pie .map iframe {
+    height: 200px; /* Modificar el tamaño del iframe en dispositivos móviles */
+    width: 100%; /* Ajustar el ancho del iframe al 100% en dispositivos móviles */
+  }
+  .pie img {
+    height: auto; /* Permitir que la altura de la imagen se ajuste automáticamente en dispositivos móviles */
+    width: 100%; /* Ajustar el ancho de la imagen al 100% en dispositivos móviles */
+  }
+}
+
 
 /* BOTONES */
 .bn632-hover {
